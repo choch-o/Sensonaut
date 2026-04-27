@@ -2,7 +2,9 @@
 
 This repository includes a research platform for studying audio-visual search behavior in both humans and reinforcement learning agents. The project combines Python implementation of PPO-based RL agents that learn to locate sound-emitting targets using binaural audio and visual cues along with a Unity-based simulator.
 
-<video src="media/teaser-video.mp4" controls="controls" style="max-width: 50%;"></video>
+<p align="center">
+  <img src="media/teaser.gif" width="600">
+</p>
 
 ## Overview
 
