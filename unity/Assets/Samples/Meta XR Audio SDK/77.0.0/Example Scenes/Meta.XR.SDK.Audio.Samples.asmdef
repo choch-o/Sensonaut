@@ -1,0 +1,28 @@
+{
+    "name": "Meta.XR.SDK.Audio.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a9f1da384a134aa5af763cbed09bbfcf",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor",
+        "macOSStandalone",
+        "WindowsStandalone64"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.meta.xr.sdk.audio",
+            "expression": "",
+            "define": "OVR_UNITY_PACKAGE_MANAGER"
+        }
+    ],
+    "noEngineReferences": false
+}

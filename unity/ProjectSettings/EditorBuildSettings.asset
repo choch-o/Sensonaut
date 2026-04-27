@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/RoomAcoustics.unity
+    guid: 011ec59e7282ce14abdfc1c08f67d40b
+  - enabled: 1
+    path: Assets/Scenes/HumanDataCollection.unity
+    guid: 683bbc15d7b24fb45a8bdd3ef56ba249
+  m_configObjects:
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: e0ad6b652a506aa4181c2129a964f804, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 464609ea179ea5c49b0523aca72d6cb2, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 31c4922676860414aa00a1c914fbf0a1, type: 2}
