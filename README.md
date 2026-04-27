@@ -97,16 +97,6 @@ python agent.py --config configs/config_train.yaml
 python agent.py --config configs/config_test.yaml
 ```
 
-### Grid Search for Hyperparameters
-
-```bash
-# Run grid search over parameters defined in config
-python agent.py --config configs/config_unity.yaml --grid
-
-# Dry run to see planned jobs
-python agent.py --config configs/config_unity.yaml --grid --dry-run
-```
-
 
 ## The Task
 
