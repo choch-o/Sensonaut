@@ -1,0 +1,143 @@
+{
+    "recordTime": "2025-08-29 15:12:37",
+    "totalVehicles": 5,
+    "vehicles": [
+        {
+            "name": "White_Car_4",
+            "tag": "Vehicles",
+            "position": {
+                "x": 36.91666793823242,
+                "y": 0.6000000238418579,
+                "z": -13.464285850524903
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "isActive": true,
+            "timestamp": "2025-08-29 15:12:37.434",
+            "layer": 0
+        },
+        {
+            "name": "White_Car_3",
+            "tag": "Vehicles",
+            "position": {
+                "x": 30.41666603088379,
+                "y": 0.6000000238418579,
+                "z": -3.107142925262451
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "isActive": true,
+            "timestamp": "2025-08-29 15:12:37.434",
+            "layer": 0
+        },
+        {
+            "name": "White_Car_2",
+            "tag": "Vehicles",
+            "position": {
+                "x": 36.91666793823242,
+                "y": 0.6000000238418579,
+                "z": 2.0714285373687746
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "isActive": true,
+            "timestamp": "2025-08-29 15:12:37.435",
+            "layer": 0
+        },
+        {
+            "name": "White_Car_1",
+            "tag": "Vehicles",
+            "position": {
+                "x": 27.16666603088379,
+                "y": 0.6000000238418579,
+                "z": 2.0714285373687746
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "isActive": true,
+            "timestamp": "2025-08-29 15:12:37.435",
+            "layer": 0
+        },
+        {
+            "name": "White_Car_0 (Target)",
+            "tag": "Vehicles",
+            "position": {
+                "x": 36.91666793823242,
+                "y": 0.6000000238418579,
+                "z": -3.107142925262451
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "isActive": true,
+            "timestamp": "2025-08-29 15:12:37.436",
+            "layer": 0
+        }
+    ],
+    "agent": {
+        "name": "HumanAgent",
+        "tag": "Untagged",
+        "position": {
+            "x": 30.41666603088379,
+            "y": 0.0,
+            "z": 8.285714149475098
+        },
+        "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "initialPosition": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "initialRotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "isActive": true,
+        "timestamp": "2025-08-29 15:12:37.437",
+        "layer": 0
+    }
+}

@@ -1,0 +1,82 @@
+# ===========================
+# Agent Configuration
+# ===========================
+
+environment:
+  use_unity: false
+  use_posterior_obs: true
+  grid_w: 13
+  grid_h: 29
+  n_objects: 7
+  n_slots: 16
+  max_steps: 30
+  turn_angle: 30          
+  pace: 1.0 
+  theta_error_bound: 0.2  
+  r_error_bound: 0.5  
+  # Reward structure
+  task_reward: 10.0     
+  step_penalty: 0.1
+  forward_penalty: 0.3    
+  turn_penalty: 0.1         
+  collision_penalty: 5.0
+  fov_angle_deg: 110      # Meta Quest 3 horizontal FOV = 110 degrees
+  history_length: 4       
+  alpha: 0.8              
+  visual_alpha: 0.7 
+  visible_weight: 5.0
+  lambda_color: 0.0
+  visual_exclusion_decay: 0.3
+  mode: "train"  # train | test
+  render_mode: "rgb_array"  
+  debug_polar: true
+  visual_audio_ratio: 1.0 
+  correct_object: false
+  # Reward shaping (optional): bonus for committing with time left
+  time_bonus_weight: 0.0         # per-step remaining bonus added on commit
+  time_bonus_success_only: true  # apply bonus only when commit is correct
+noise:
+  itd_noise_scale: 30.0         # microseconds
+  ild_noise_scale: 0.1          # dB
+  sigma_theta_deg: 0.0
+  alpha_r: 0.0
+  sigma_r_min: 0.000001
+
+grid_search:
+  # turn_angle: [30, 45]
+  # step_penalty: [0.5, 1.0]
+  # forward_penalty: [0.5, 0.8]
+  # turn_penalty: [0.1]
+  # alpha: [0.5, 0.8]
+  # visual_audio_ratio: [0.5, 0.7]
+  # correct_object: [true, false]
+  # visual_exclusion_decay: [0.3, 0.5]
+  visual_audio_ratio: [0.0, 1.0]
+physics:
+  head_radius: 0.0875           # meters
+  speed_of_sound: 343.0         # m/s (converted in code to microseconds)
+
+model:
+  # NOTE: gamma
+  policy: "MultiInputPolicy"  
+  algorithm: "PPO"
+  total_timesteps: 1_000_000  
+  deterministic_test: true
+  pretrained_model: null                              # Training from scratch
+  # pretrained_model: "models/model_chi26_sensonaut"  # Curriculum learning
+  
+logging:
+  project_name_train: "audio-visual-search-training"
+  project_name_test: "audio-visual-search-testing"
+  save_videos: true
+  video_dir: "videos"
+  log_interval: 10
+  tensorboard_log_dir: "runs"
+  checkpoint_dir: "checkpoints"
+  checkpoint_freq: 100000
+  test_log_dir: "test_logs"
+
+testing:
+  test_modes:
+    - test
+  episodes_per_mode: 270
